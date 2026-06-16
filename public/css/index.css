@@ -1,0 +1,228 @@
+:root {
+  --primary-Blue1: #ffffff;
+  --primary-Blue2: #e6f5ff;
+  --primary-Blue3: #ccebff;
+  --primary-Blue4: #b3e2ff;
+  --primary-Blue5: #9ad8fe;
+  --primary-Blue6: #80cefe;
+  --primary-Blue7: #67c4fe;
+  --primary-Blue8: #4dbafe;
+  --primary-Blue9: #34b1fe;
+  --primary-Blue10: #1ba7fe;
+  --primary-Blue11: #019dfe;
+  --primary-Blue12: #018de4;
+  --primary-Blue13: #017ecb;
+  --primary-Blue14: #016eb2;
+  --primary-Blue15: #016bac;
+  --primary-Blue16: #015e98;
+  --primary-Blue17: #014e7f;
+  --primary-Blue18: #013f65;
+  --primary-Blue19: #002f4c;
+  --primary-Blue20: #001f33;
+  --primary-Blue21: #001019;
+  --primary-Blue22: #000000;
+
+  --color-slate-200: oklch(92.9% 0.013 255.508);
+  --color-slate-300: oklch(86.9% 0.022 252.894);
+  --color-slate-400: oklch(70.4% 0.04 256.788);
+  --color-slate-500: oklch(55.4% 0.046 257.417);
+  --color-slate-600: oklch(44.6% 0.043 257.281);
+  --color-slate-700: oklch(37.2% 0.044 257.287);
+  --color-slate-800: oklch(27.9% 0.041 260.031);
+  --color-slate-900: oklch(20.8% 0.042 265.755);
+  --color-slate-950: oklch(12.9% 0.042 264.695);
+  --bg: #f8fafc;
+  --bg-light: #f8f9fa;
+  --color-blue-1: #0070e5;
+  --color-blue-2: #67c4fe;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: RobotoLight, Helvetica, Arial, Sans-serif;
+  font-size: 1.7rem;
+  line-height: 155%;
+  color: #444444;
+  background: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+}
+section {
+  padding: 0 10%;
+}
+/*END OF GENERAL CUSTOMIZATIONS*/
+header {
+  width: 100%;
+}
+header section {
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #e3003a 0%,
+    #643688 21%,
+    #14387f 41%,
+    #0070e5 64%,
+    #76b82a 84%,
+    #fcbe00 100%
+  );
+  z-index: 20;
+  box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
+  mix-blend-mode: multiply;
+}
+.logo {
+  display: flex;
+}
+#menuIcon {
+  display: block;
+}
+#menuIcon:last-child {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+#menuIcon:last-child:before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 11px;
+  margin: 6px 0 0 3px;
+  border-top: solid 2px #000000;
+  border-bottom: solid 2px #000000;
+  transition:
+    all 0.3s linear,
+    border-color 0.3s 0.3s linear;
+  box-sizing: border-box;
+}
+#menuIcon:last-child:after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 20px;
+  margin: 6px 0 0 3px;
+  border-bottom: solid 2px #000000;
+  transition: all 0.3s linear;
+  box-sizing: border-box;
+}
+.navegation {
+  display: none;
+}
+.navegation nav a {
+  text-decoration: none;
+  color: var(--color-blue-1);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+@media only screen and (min-width: 800px) {
+  #menuIcon {
+    display: none;
+  }
+  .navegation {
+    display: block;
+  }
+}
+/*BANNER COSTOMIZATION*/
+.section-banner h1 {
+  background: linear-gradient(
+    90deg,
+    #e3003a 0%,
+    #643688 21%,
+    #14387f 41%,
+    #0070e5 64%,
+    #76b82a 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  line-height: normal !important;
+}
+/*BANNER RELATORIO CUSTOMIZATION*/
+.section-relatorio {
+  background: linear-gradient(
+    135deg,
+    rgba(194, 8, 49, 1) 5%,
+    rgba(227, 0, 58, 1) 50%,
+    rgba(194, 8, 49, 1) 100%
+  );
+  padding-bottom: 4%;
+  padding-top: 5%;
+}
+.relatorio-set {
+  color: #fff;
+}
+.each-relatorio {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.each-relatorio span {
+  text-transform: capitalize;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+}
+/* SECTION CURSOS CUSTOMIZATION*/
+.section-cursos {
+  background-color: var(--bg-light);
+  padding-top: 5%;
+}
+.cursos-set {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.cursos-set .each-curso ul {
+  list-style: decimal;
+}
+.cursos-set .each-curso ul li::marker {
+  color: var(--color-blue-1);
+  font-size: 12px;
+}
+.cursos-set .each-curso h3 {
+  color: #643688 !important;
+  font-weight: 300;
+  font-size: 1.4rem;
+  margin-left: -10px;
+  margin-bottom: 0;
+}
+.cursos-set .each-curso {
+  font-size: 1rem;
+  margin: 0 10px;
+  width: 100%;
+  /*border: 1px solid var(--color-slate-200);*/
+  background-color: #fff;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  box-shadow:
+    0 2px 20px 0 rgba(68, 68, 68, 0.041),
+    0 8px 10px 0 rgba(0, 0, 0, 0.041),
+    0 4px 8px -2px rgba(0, 0, 0, 0.027);
+}
+.cursos-set .each-curso div {
+  border-top: 1px solid var(--color-slate-200);
+  background-color: var(--bg);
+}
+.cursos-set .each-curso div span {
+  color: var(--color-blue-1);
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+  margin-left: 40px;
+}
+@media only screen and (min-width: 800px) {
+  .cursos-set {
+    flex-direction: row;
+  }
+}
