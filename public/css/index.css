@@ -158,7 +158,9 @@ header:after {
   justify-content: right;
 }
 .section-banner2 div img {
+  box-sizing: border-box;
   max-height: 100%;
+  max-width: 100%;
 }
 /*BANNER RELATORIO CUSTOMIZATION*/
 .section-relatorio {
