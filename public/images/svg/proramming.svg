@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="61.5" height="49.5" viewBox="0 0 61.5 49.5">
+  <g id="icon_software_development" transform="translate(-9.25 -15.25)">
+    <path id="Path_63861" data-name="Path 63861" d="M31.47,37.47l-6,6a.75.75,0,0,0,0,1.061l6,6L32.53,49.47,27.061,44l5.47-5.47Z" fill="#643688"/>
+    <path id="Path_63862" data-name="Path 63862" d="M48.53,37.47,47.47,38.53,52.939,44l-5.47,5.47L48.53,50.53l6-6a.75.75,0,0,0,0-1.061Z" fill="#643688"/>
+    <rect id="Rectangle_7631" data-name="Rectangle 7631" width="25.632" height="1.5" transform="matrix(0.351, -0.936, 0.936, 0.351, 34.8, 55.738)" fill="#643688"/>
+    <path id="Path_63863" data-name="Path 63863" d="M9.25,16V64a.75.75,0,0,0,.75.75H70a.75.75,0,0,0,.75-.75V16a.75.75,0,0,0-.75-.75H10A.75.75,0,0,0,9.25,16Zm1.5.75h58.5v6.5H10.75Zm0,8h58.5v38.5H10.75Z" fill="#643688"/>
+    <circle id="Ellipse_2076" data-name="Ellipse 2076" cx="1" cy="1" r="1" transform="translate(15 19)" fill="#643688"/>
+    <circle id="Ellipse_2077" data-name="Ellipse 2077" cx="1" cy="1" r="1" transform="translate(21 19)" fill="#643688"/>
+    <circle id="Ellipse_2078" data-name="Ellipse 2078" cx="1" cy="1" r="1" transform="translate(27 19)" fill="#643688"/>
+  </g>
+</svg>

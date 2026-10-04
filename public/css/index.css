@@ -131,6 +131,9 @@ header:after {
   }
 }
 /*BANNER COSTOMIZATION*/
+.section-banner {
+  padding: 10%;
+}
 .section-banner h1 {
   background: linear-gradient(
     90deg,
@@ -145,23 +148,152 @@ header:after {
   width: fit-content;
   line-height: normal !important;
 }
+/*SUBJECT AREAS CUSTOM*/
+.section-subject-areas {
+  background-color: var(--bg);
+  padding: 5% 10%;
+}
+.section-subject-areas .section-subject-areas-set .subject-areas-itens {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-subject-areas .section-subject-areas-set .subject-areas-itens a {
+  height: 100px;
+  width: 300px;
+  border: 1px solid var(--color-slate-200);
+  border-radius: 10px;
+  display: flex;
+  text-decoration:none;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.section-subject-areas .section-subject-areas-set .subject-areas-itens a img{
+  max-width: 45px;
+  margin-right: 10px;
+}
+.section-subject-areas .section-subject-areas-set .subject-areas-itens a div {
+  color: initial;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*BANNER2 COSTOMIZATION*/
 .section-banner2 {
   padding: 0;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  object-fit: cover;
 }
-.section-banner2 div {
+.banner2-cover {
+  background: linear-gradient(
+    45deg,
+    rgb(22, 0, 0),
+    rgba(22, 0, 0, 0.918),
+    rgba(22, 0, 0, 0.295),
+    rgba(22, 0, 0, 0)
+  );
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+.banner2-cover h1 {
+  color: var(--primary-Blue1);
+}
+.section-banner2 h1 span {
+  background: linear-gradient(
+    135deg,
+    rgba(194, 8, 49, 1) 5%,
+    rgba(227, 0, 58, 1) 50%,
+    rgba(194, 8, 49, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner2-cover p {
+  color: var(--color-slate-200);
+  font-weight: 300;
+}
+.section-banner2 .banner2-img {
   object-fit: cover;
   width: 100%;
   display: flex;
   background-repeat: no-repeat;
   background-position: right;
   justify-content: right;
+  height: 100vh;
 }
-.section-banner2 div img {
+.section-banner2 .banner2-img img {
   box-sizing: border-box;
   max-height: 100%;
   max-width: 100%;
+  object-fit: cover;
 }
+.seach-set {
+  max-width: 350px;
+}
+.seach-set .seach-input {
+  background-color: #fff;
+  box-shadow:
+    0 2px 20px 0 rgba(68, 68, 68, 0.041),
+    0 8px 10px 0 rgba(0, 0, 0, 0.041),
+    0 4px 8px -2px rgba(0, 0, 0, 0.027);
+  border-radius: 10px;
+  height: 45px;
+
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-between;
+  border: 1px solid #e3e6ee;
+  box-sizing: border-box;
+}
+.seach-set .seach-input input {
+  height: 100%;
+  border: none;
+  outline: none;
+  width: calc(100% - 110px);
+  color: var(--color-slate-900);
+  font-size: 1rem;
+}
+.seach-set .seach-input .btn-search {
+  background: linear-gradient(
+    135deg,
+    rgba(194, 8, 49, 1) 5%,
+    rgba(227, 0, 58, 1) 50%,
+    rgba(194, 8, 49, 1) 100%
+  );
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  color: #fff;
+  box-sizing: border-box;
+}
+.seach-set .seach-data {
+  background-color: #ffffff1c;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 2px 20px 0 rgba(68, 68, 68, 0.041),
+    0 8px 10px 0 rgba(0, 0, 0, 0.041),
+    0 4px 8px -2px rgba(0, 0, 0, 0.027);
+}
+.seach-set .seach-data ul li {
+  font-size: 1rem;
+  color: #fff;
+  list-style: none;
+}
+
 /*BANNER RELATORIO CUSTOMIZATION*/
 .section-relatorio {
   background: linear-gradient(
@@ -189,6 +321,52 @@ header:after {
   text-transform: capitalize;
   font-family: system-ui, "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 300;
+}
+/* SECTION CURSOS VIDEO*/
+.section-video {
+  padding: 10%;
+}
+.section-video .section-video-set {
+  display: flex;
+  flex-direction: column;
+}
+.section-video .section-tittle-set h1 {
+  background: linear-gradient(
+    90deg,
+    #e3003a 0%,
+    #643688 21%,
+    #14387f 41%,
+    #0070e5 64%,
+    #76b82a 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  line-height: normal !important;
+}
+.section-video .section-video-set .video-container {
+  background: #fff;
+  border: 1px solid #e3e6ee;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(22, 41, 108, 0.08);
+  width: 100%;
+  margin: 10px;
+  height: 200px !important;
+}
+.section-video .section-video-set .video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media only screen and (min-width: 800px) {
+  .section-video .section-video-set {
+    flex-direction: row;
+  }
+  .section-video .section-video-set .video-container {
+    height: 320px;
+  }
 }
 /* SECTION CURSOS CUSTOMIZATION*/
 .section-cursos {
